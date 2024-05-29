@@ -1,0 +1,637 @@
+<?xml version="1.0" ?>
+<robot name="dexhandv2_right" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find dexhandv2_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find dexhandv2_description)/urdf/dexhandv2_right.trans" />
+<xacro:include filename="$(find dexhandv2_description)/urdf/dexhandv2_right.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.007689524166402843 -0.0014012994166675186 0.03600705995032628" rpy="0 0 0"/>
+    <mass value="2.5693559159130035"/>
+    <inertia ixx="0.003206" iyy="0.001945" izz="0.002103" ixy="4.6e-05" iyz="1.6e-05" ixz="5.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Index_Knuckle_1">
+  <inertial>
+    <origin xyz="-0.005617566441979023 -0.004263081858872926 0.024459068475414014" rpy="0 0 0"/>
+    <mass value="0.057232258646826684"/>
+    <inertia ixx="1.2e-05" iyy="1.1e-05" izz="2e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.010748 -0.034561 -0.088928" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Index_Knuckle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.010748 -0.034561 -0.088928" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Index_Knuckle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Middle_Knuckle_1">
+  <inertial>
+    <origin xyz="-0.0053423492763846146 -0.004751533136442774 0.02443132246394987" rpy="0 0 0"/>
+    <mass value="0.057232258646826684"/>
+    <inertia ixx="1.2e-05" iyy="1.1e-05" izz="2e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0095 -0.01205 -0.094983" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Middle_Knuckle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0095 -0.01205 -0.094983" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Middle_Knuckle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Ring_Knuckle_1">
+  <inertial>
+    <origin xyz="-0.00499536472398323 -0.0051981437287493305 0.024413654590863074" rpy="0 0 0"/>
+    <mass value="0.057232258646826684"/>
+    <inertia ixx="1.2e-05" iyy="1.1e-05" izz="2e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.010613 0.010934 -0.091111" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Ring_Knuckle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.010613 0.010934 -0.091111" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Ring_Knuckle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pinky_Knuckle_1">
+  <inertial>
+    <origin xyz="-0.003880364603590236 -0.005628060022037279 0.02452073099863339" rpy="0 0 0"/>
+    <mass value="0.057232258646826684"/>
+    <inertia ixx="1.2e-05" iyy="1.1e-05" izz="2e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.013596 0.032422 -0.082783" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Pinky_Knuckle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.013596 0.032422 -0.082783" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Pinky_Knuckle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Index_Middle_1">
+  <inertial>
+    <origin xyz="-0.0013224985762564515 -0.007289279633795293 0.014085325142538463" rpy="0 0 0"/>
+    <mass value="0.029055618634630877"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.007216 -0.037554 -0.133946" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Index_Middle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.007216 -0.037554 -0.133946" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Index_Middle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Middle_Middle_1">
+  <inertial>
+    <origin xyz="-0.000748200575903267 -0.007382647677029439 0.014078898502378867" rpy="0 0 0"/>
+    <mass value="0.029055618634630877"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0055 -0.0147 -0.139983" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Middle_Middle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0055 -0.0147 -0.139983" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Middle_Middle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Ring_Middle_1">
+  <inertial>
+    <origin xyz="-0.0001526105949676516 -0.007419627016542654 0.014078114365207756" rpy="0 0 0"/>
+    <mass value="0.029055618634630877"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.006237 0.008642 -0.136096" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Ring_Middle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.006237 0.008642 -0.136096" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Ring_Middle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pinky_Middle_1">
+  <inertial>
+    <origin xyz="0.0008844819690768356 -0.007397505520163869 0.01406265533428308" rpy="0 0 0"/>
+    <mass value="0.029055618634630877"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.010161 0.030528 -0.127868" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Pinky_Middle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.010161 0.030528 -0.127868" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Pinky_Middle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Index_Tip_1">
+  <inertial>
+    <origin xyz="-0.00031356817587347915 -0.0028006513879080056 0.007069716391178871" rpy="0 0 0"/>
+    <mass value="0.018995895295817036"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.006995 -0.03337 -0.163947" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Index_Tip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.006995 -0.03337 -0.163947" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Index_Tip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Midle_Tip_1">
+  <inertial>
+    <origin xyz="-0.00010202212506613302 -0.002820062193980945 0.007067870395751047" rpy="0 0 0"/>
+    <mass value="0.018995895295817036"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0055 -0.0105 -0.169983" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Midle_Tip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0055 -0.0105 -0.169983" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Midle_Tip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Ring_Tip_1">
+  <inertial>
+    <origin xyz="0.00011862144140123952 -0.0028181864528833943 0.007068122192193688" rpy="0 0 0"/>
+    <mass value="0.018995895295817036"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.006496 0.012826 -0.166097" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Ring_Tip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.006496 0.012826 -0.166097" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Ring_Tip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pinky_Tip_1">
+  <inertial>
+    <origin xyz="0.0005552836495658926 -0.002793482086718077 0.007056916444342365" rpy="0 0 0"/>
+    <mass value="0.018995895295817036"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.011558 0.03466 -0.157845" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Pinky_Tip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.011558 0.03466 -0.157845" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Pinky_Tip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Thumb_Prox_KC_1">
+  <inertial>
+    <origin xyz="-0.005783732642998508 -0.005234605010581522 0.005230813563652258" rpy="0 0 0"/>
+    <mass value="0.010139940256668681"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.042207 -0.017744 0.001358" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Thumb_Prox_KC_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.042207 -0.017744 0.001358" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Thumb_Prox_KC_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Thumb_Dist_KC_1">
+  <inertial>
+    <origin xyz="0.007329221379911641 -3.824123206673698e-05 0.005828175487633645" rpy="0 0 0"/>
+    <mass value="0.01817352538423656"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.034982 -0.011946 -0.003792" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Thumb_Dist_KC_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.034982 -0.011946 -0.003792" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Thumb_Dist_KC_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Thumb_Middle_1">
+  <inertial>
+    <origin xyz="0.013340941303846623 0.005158352275377089 0.014104228036654974" rpy="0 0 0"/>
+    <mass value="0.042415595330021844"/>
+    <inertia ixx="3e-06" iyy="5e-06" izz="4e-06" ixy="0.0" iyz="-0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.087079 -0.009238 -0.036221" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Thumb_Middle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.087079 -0.009238 -0.036221" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Thumb_Middle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Thumb_Tip_1">
+  <inertial>
+    <origin xyz="0.007064370889976218 0.005004385415092249 0.009797333101775912" rpy="0 0 0"/>
+    <mass value="0.029857587762647974"/>
+    <inertia ixx="1e-06" iyy="3e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.118585 -0.009114 -0.060866" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Thumb_Tip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.118585 -0.009114 -0.060866" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Thumb_Tip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Index_Knuckle_Cross_1">
+  <inertial>
+    <origin xyz="-0.008236768026459555 0.0007243561838455627 0.0016005367483632044" rpy="0 0 0"/>
+    <mass value="0.018067034327727577"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.01778 -0.029123 -0.084894" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Index_Knuckle_Cross_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.01778 -0.029123 -0.084894" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Index_Knuckle_Cross_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Middle_Knuckle_Cross_1">
+  <inertial>
+    <origin xyz="-0.008276004065600816 3.318801662134663e-08 0.001560707543851736" rpy="0 0 0"/>
+    <mass value="0.018067034327727577"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.017 -0.00725 -0.090983" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Middle_Knuckle_Cross_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.017 -0.00725 -0.090983" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Middle_Knuckle_Cross_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Ring_Knuckle_Cross_1">
+  <inertial>
+    <origin xyz="-0.008250381618312196 -0.0007200297459291037 0.001531439351922348" rpy="0 0 0"/>
+    <mass value="0.018067034327727577"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.018517 0.015063 -0.087139" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Ring_Knuckle_Cross_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.018517 0.015063 -0.087139" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Ring_Knuckle_Cross_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pinky_Knuckle_Cross_1">
+  <inertial>
+    <origin xyz="-0.008107321284378135 -0.0014762675960671087 0.001736108452129459" rpy="0 0 0"/>
+    <mass value="0.018067034327727577"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.021743 0.035807 -0.078606" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Pinky_Knuckle_Cross_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.021743 0.035807 -0.078606" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Pinky_Knuckle_Cross_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Thumb_Knuckle_1">
+  <inertial>
+    <origin xyz="0.02583903164988658 -0.0052219176801160255 0.007683620189067311" rpy="0 0 0"/>
+    <mass value="0.06613687822002302"/>
+    <inertia ixx="9e-06" iyy="1.8e-05" izz="1.3e-05" ixy="0.0" iyz="-1e-06" ixz="-7e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.040224 -0.020046 -0.014926" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Thumb_Knuckle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.040224 -0.020046 -0.014926" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dexhandv2_description/meshes/right/Thumb_Knuckle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Index_Pitch" type="revolute">
+  <origin xyz="-0.007032 0.005438 0.004034" rpy="0 0 0"/>
+  <parent link="Index_Knuckle_Cross_1"/>
+  <child link="Index_Knuckle_1"/>
+  <axis xyz="0.087537 0.996161 -0.000428"/>
+  <limit upper="1.308997" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Middle_Pitch" type="revolute">
+  <origin xyz="-0.0075 0.0048 0.004" rpy="0 0 0"/>
+  <parent link="Middle_Knuckle_Cross_1"/>
+  <child link="Middle_Knuckle_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit upper="1.308997" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Ring_Pitch" type="revolute">
+  <origin xyz="-0.007904 0.004129 0.003972" rpy="0 0 0"/>
+  <parent link="Ring_Knuckle_Cross_1"/>
+  <child link="Ring_Knuckle_1"/>
+  <axis xyz="-0.08702 0.996207 -0.00031"/>
+  <limit upper="1.308997" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Pinky_Pitch" type="revolute">
+  <origin xyz="-0.008147 0.003385 0.004177" rpy="0 0 0"/>
+  <parent link="Pinky_Knuckle_Cross_1"/>
+  <child link="Pinky_Knuckle_1"/>
+  <axis xyz="-0.178318 0.983965 0.003854"/>
+  <limit upper="1.308997" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Index_PIP" type="revolute">
+  <origin xyz="-0.003532 0.002993 0.045018" rpy="0 0 0"/>
+  <parent link="Index_Knuckle_1"/>
+  <child link="Index_Middle_1"/>
+  <axis xyz="0.087537 0.996161 -0.000428"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Middle_PIP" type="revolute">
+  <origin xyz="-0.004 0.00265 0.045" rpy="0 0 0"/>
+  <parent link="Middle_Knuckle_1"/>
+  <child link="Middle_Middle_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Ring_PIP" type="revolute">
+  <origin xyz="-0.004376 0.002292 0.044985" rpy="0 0 0"/>
+  <parent link="Ring_Knuckle_1"/>
+  <child link="Ring_Middle_1"/>
+  <axis xyz="-0.08702 0.996207 -0.00031"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Pinky_PIP" type="revolute">
+  <origin xyz="-0.003435 0.001894 0.045085" rpy="0 0 0"/>
+  <parent link="Pinky_Knuckle_1"/>
+  <child link="Pinky_Middle_1"/>
+  <axis xyz="-0.178318 0.983965 0.003854"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Index_DIP" type="revolute">
+  <origin xyz="-0.000221 -0.004184 0.030001" rpy="0 0 0"/>
+  <parent link="Index_Middle_1"/>
+  <child link="Index_Tip_1"/>
+  <axis xyz="0.087537 0.996161 -0.000428"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Middle_DIP" type="revolute">
+  <origin xyz="0.0 -0.0042 0.03" rpy="0 0 0"/>
+  <parent link="Middle_Middle_1"/>
+  <child link="Midle_Tip_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Ring_DIP" type="revolute">
+  <origin xyz="0.000259 -0.004184 0.030001" rpy="0 0 0"/>
+  <parent link="Ring_Middle_1"/>
+  <child link="Ring_Tip_1"/>
+  <axis xyz="-0.08702 0.996207 -0.00031"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Pinky_DIP" type="revolute">
+  <origin xyz="0.001397 -0.004132 0.029977" rpy="0 0 0"/>
+  <parent link="Pinky_Middle_1"/>
+  <child link="Pinky_Tip_1"/>
+  <axis xyz="-0.178318 0.983965 0.003854"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Thumb_Yaw" type="revolute">
+  <origin xyz="0.042207 0.017744 -0.001358" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Thumb_Prox_KC_1"/>
+  <axis xyz="0.510615 0.562877 -0.649955"/>
+  <limit upper="0.523599" lower="-0.523599" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Thumb_Roll" type="revolute">
+  <origin xyz="-0.007225 -0.005798 0.00515" rpy="0 0 0"/>
+  <parent link="Thumb_Prox_KC_1"/>
+  <child link="Thumb_Dist_KC_1"/>
+  <axis xyz="0.786356 -0.0 0.617773"/>
+  <limit upper="0.349066" lower="-0.349066" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Thumb_PIP" type="revolute">
+  <origin xyz="0.046855 -0.010808 0.021295" rpy="0 0 0"/>
+  <parent link="Thumb_Knuckle_1"/>
+  <child link="Thumb_Middle_1"/>
+  <axis xyz="0.34773 -0.826541 -0.442622"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Thumb_DIP" type="revolute">
+  <origin xyz="0.031506 -0.000124 0.024645" rpy="0 0 0"/>
+  <parent link="Thumb_Middle_1"/>
+  <child link="Thumb_Tip_1"/>
+  <axis xyz="0.34773 -0.826541 -0.442622"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Index_Yaw" type="revolute">
+  <origin xyz="0.01778 0.029123 0.084894" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Index_Knuckle_Cross_1"/>
+  <axis xyz="0.996149 -0.087538 -0.004875"/>
+  <limit upper="0.349066" lower="-0.349066" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Middle_Yaw" type="revolute">
+  <origin xyz="0.017 0.00725 0.090983" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Middle_Knuckle_Cross_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+  <limit upper="0.349066" lower="-0.349066" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Ring_Yaw" type="revolute">
+  <origin xyz="0.018517 -0.015063 0.087139" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Ring_Knuckle_Cross_1"/>
+  <axis xyz="0.9962 0.08702 0.003551"/>
+  <limit upper="0.349066" lower="-0.349066" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Pinky_Yaw" type="revolute">
+  <origin xyz="0.021743 -0.035807 0.078606" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Pinky_Knuckle_Cross_1"/>
+  <axis xyz="0.983736 0.178359 -0.021263"/>
+  <limit upper="0.349066" lower="-0.349066" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Thumb_Pitch" type="revolute">
+  <origin xyz="0.005242 0.0081 0.011134" rpy="0 0 0"/>
+  <parent link="Thumb_Dist_KC_1"/>
+  <child link="Thumb_Knuckle_1"/>
+  <axis xyz="0.34773 -0.826541 -0.442622"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+</robot>
