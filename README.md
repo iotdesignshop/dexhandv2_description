@@ -9,7 +9,7 @@ involving dexterous manipulation in the physical world. THe project homepage can
 This package provides:
 - URDF for the DexHand V2 robot hand
 - RVIZ2 configuration for visualizing the hand with support for the ROS 2 Joint State Publisher GUI
-- Launch files to make it easy to visualize the DexHand  V2in RVIZ2
+- Launch files to make it easy to visualize the DexHand V2 in RVIZ2
 
 ## Setup
 

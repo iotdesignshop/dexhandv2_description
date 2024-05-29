@@ -17,6 +17,7 @@ setup(
         (os.path.join('share', package_name, 'urdf'), glob('urdf/*')),
         (os.path.join('share', package_name, 'rviz'), glob('rviz/*')),
         (os.path.join('share', package_name, 'meshes/right'), glob('meshes/right/*')),
+        (os.path.join('share', package_name, 'meshes/cobot_right'), glob('meshes/cobot_right/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

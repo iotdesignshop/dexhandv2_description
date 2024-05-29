@@ -46,6 +46,11 @@ Visualization Manager:
       Enabled: true
       Links:
         All Links Enabled: true
+        Cobot_Forearm_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
@@ -90,6 +95,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        Palm_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         Pinky_Knuckle_1:
           Alpha: 1
           Show Axes: false
@@ -126,6 +136,11 @@ Visualization Manager:
           Show Trail: false
           Value: true
         Ring_Tip_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Solid_Wrist_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -173,6 +188,8 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        Cobot_Forearm_1:
+          Value: true
         Index_Knuckle_1:
           Value: true
         Index_Knuckle_Cross_1:
@@ -189,6 +206,8 @@ Visualization Manager:
           Value: true
         Midle_Tip_1:
           Value: true
+        Palm_1:
+          Value: true
         Pinky_Knuckle_1:
           Value: true
         Pinky_Knuckle_Cross_1:
@@ -204,6 +223,8 @@ Visualization Manager:
         Ring_Middle_1:
           Value: true
         Ring_Tip_1:
+          Value: true
+        Solid_Wrist_1:
           Value: true
         Thumb_Dist_KC_1:
           Value: true
@@ -224,32 +245,35 @@ Visualization Manager:
       Show Names: false
       Tree:
         base_link:
-          Index_Knuckle_Cross_1:
-            Index_Knuckle_1:
-              Index_Middle_1:
-                Index_Tip_1:
-                  {}
-          Middle_Knuckle_Cross_1:
-            Middle_Knuckle_1:
-              Middle_Middle_1:
-                Midle_Tip_1:
-                  {}
-          Pinky_Knuckle_Cross_1:
-            Pinky_Knuckle_1:
-              Pinky_Middle_1:
-                Pinky_Tip_1:
-                  {}
-          Ring_Knuckle_Cross_1:
-            Ring_Knuckle_1:
-              Ring_Middle_1:
-                Ring_Tip_1:
-                  {}
-          Thumb_Prox_KC_1:
-            Thumb_Dist_KC_1:
-              Thumb_Knuckle_1:
-                Thumb_Middle_1:
-                  Thumb_Tip_1:
-                    {}
+          Cobot_Forearm_1:
+            Solid_Wrist_1:
+              Palm_1:
+                Index_Knuckle_Cross_1:
+                  Index_Knuckle_1:
+                    Index_Middle_1:
+                      Index_Tip_1:
+                        {}
+                Middle_Knuckle_Cross_1:
+                  Middle_Knuckle_1:
+                    Middle_Middle_1:
+                      Midle_Tip_1:
+                        {}
+                Pinky_Knuckle_Cross_1:
+                  Pinky_Knuckle_1:
+                    Pinky_Middle_1:
+                      Pinky_Tip_1:
+                        {}
+                Ring_Knuckle_Cross_1:
+                  Ring_Knuckle_1:
+                    Ring_Middle_1:
+                      Ring_Tip_1:
+                        {}
+                Thumb_Prox_KC_1:
+                  Thumb_Dist_KC_1:
+                    Thumb_Knuckle_1:
+                      Thumb_Middle_1:
+                        Thumb_Tip_1:
+                          {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -267,25 +291,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.48207393288612366
+      Distance: 0.474346786737442
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.018496910110116005
-        Y: 0.00442248210310936
-        Z: 0.08443118631839752
+        X: 0.08360124379396439
+        Y: 0.02388385310769081
+        Z: 0.18404585123062134
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4049999415874481
+      Pitch: 0.14500018954277039
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.823185443878174
+      Yaw: 0.33500152826309204
     Saved: ~
 Window Geometry:
   Displays:
