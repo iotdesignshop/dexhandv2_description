@@ -1,6 +1,8 @@
 # dexhand_description
 ROS 2 URDF and Visualization for DexHand V2
 
+<img width="800" alt="Screenshot 2024-05-29 at 4 10 20 PM" src="https://github.com/iotdesignshop/dexhandv2_description/assets/2821763/858f8d88-bcbe-4b03-9915-61f791f2611a">
+
 
 ## Overview
 The DexHand V2 is a dexterous humanoid robot hand that is designed for research and development activity
@@ -10,6 +12,13 @@ This package provides:
 - URDF for the DexHand V2 robot hand
 - RVIZ2 configuration for visualizing the hand with support for the ROS 2 Joint State Publisher GUI
 - Launch files to make it easy to visualize the DexHand V2 in RVIZ2
+
+### Models Provided
+
+The package currently provides two variants of URDF/XACRO files for the DexHand V2:
+
+- __dexhand_right.urdf__ - Just the palm and finger joints for the DexHand. Suitable for grafting onto other models.
+- __dexhand_cobot_right.urdf__ - The V2 DexHand with Cobot Forearm (This is the default model used in RVIZ, etc. in the package)
 
 ## Setup
 
@@ -54,5 +63,4 @@ Once you have the package built, you can use the included ROS 2 launchfile to st
 
 This should open the RVIZ2 window and display the hand along with the GUI which you can use to test the motion of all the joints
 
-<img width="800" alt="Screenshot 2023-09-11 at 6 37 36 AM" src="https://github.com/iotdesignshop/dexhand_description/assets/2821763/f4967f8e-8c3e-4fc5-82f1-0c7c1afae3b3">
 
