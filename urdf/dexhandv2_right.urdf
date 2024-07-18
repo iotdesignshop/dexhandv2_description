@@ -793,147 +793,152 @@
       </geometry>
     </collision>
   </link>
-  <joint name="Index_Pitch" type="revolute">
+  <joint name="R_Index_Pitch" type="revolute">
     <origin rpy="0 0 0" xyz="-0.007032 0.005438 0.004034"/>
     <parent link="Index_Knuckle_Cross_1"/>
     <child link="Index_Knuckle_1"/>
     <axis xyz="0.087537 0.996161 -0.000428"/>
     <limit effort="100" lower="0.0" upper="1.308997" velocity="100"/>
   </joint>
-  <joint name="Middle_Pitch" type="revolute">
+  <joint name="R_Middle_Pitch" type="revolute">
     <origin rpy="0 0 0" xyz="-0.0075 0.0048 0.004"/>
     <parent link="Middle_Knuckle_Cross_1"/>
     <child link="Middle_Knuckle_1"/>
     <axis xyz="-0.0 1.0 0.0"/>
     <limit effort="100" lower="0.0" upper="1.308997" velocity="100"/>
   </joint>
-  <joint name="Ring_Pitch" type="revolute">
+  <joint name="R_Ring_Pitch" type="revolute">
     <origin rpy="0 0 0" xyz="-0.007904 0.004129 0.003972"/>
     <parent link="Ring_Knuckle_Cross_1"/>
     <child link="Ring_Knuckle_1"/>
     <axis xyz="-0.08702 0.996207 -0.00031"/>
     <limit effort="100" lower="0.0" upper="1.308997" velocity="100"/>
   </joint>
-  <joint name="Pinky_Pitch" type="revolute">
+  <joint name="R_Pinky_Pitch" type="revolute">
     <origin rpy="0 0 0" xyz="-0.008147 0.003385 0.004177"/>
     <parent link="Pinky_Knuckle_Cross_1"/>
     <child link="Pinky_Knuckle_1"/>
     <axis xyz="-0.178318 0.983965 0.003854"/>
     <limit effort="100" lower="0.0" upper="1.308997" velocity="100"/>
   </joint>
-  <joint name="Index_PIP" type="revolute">
+  <joint name="R_Index_Flexor" type="revolute">
     <origin rpy="0 0 0" xyz="-0.003532 0.002993 0.045018"/>
     <parent link="Index_Knuckle_1"/>
     <child link="Index_Middle_1"/>
     <axis xyz="0.087537 0.996161 -0.000428"/>
     <limit effort="100" lower="0.0" upper="1.047198" velocity="100"/>
   </joint>
-  <joint name="Middle_PIP" type="revolute">
+  <joint name="R_Middle_Flexor" type="revolute">
     <origin rpy="0 0 0" xyz="-0.004 0.00265 0.045"/>
     <parent link="Middle_Knuckle_1"/>
     <child link="Middle_Middle_1"/>
     <axis xyz="-0.0 1.0 0.0"/>
     <limit effort="100" lower="0.0" upper="1.047198" velocity="100"/>
   </joint>
-  <joint name="Ring_PIP" type="revolute">
+  <joint name="R_Ring_Flexor" type="revolute">
     <origin rpy="0 0 0" xyz="-0.004376 0.002292 0.044985"/>
     <parent link="Ring_Knuckle_1"/>
     <child link="Ring_Middle_1"/>
     <axis xyz="-0.08702 0.996207 -0.00031"/>
     <limit effort="100" lower="0.0" upper="1.047198" velocity="100"/>
   </joint>
-  <joint name="Pinky_PIP" type="revolute">
+  <joint name="R_Pinky_Flexor" type="revolute">
     <origin rpy="0 0 0" xyz="-0.003435 0.001894 0.045085"/>
     <parent link="Pinky_Knuckle_1"/>
     <child link="Pinky_Middle_1"/>
     <axis xyz="-0.178318 0.983965 0.003854"/>
     <limit effort="100" lower="0.0" upper="1.047198" velocity="100"/>
   </joint>
-  <joint name="Index_DIP" type="revolute">
+  <joint name="R_Index_DIP" type="revolute">
     <origin rpy="0 0 0" xyz="-0.000221 -0.004184 0.030001"/>
     <parent link="Index_Middle_1"/>
     <child link="Index_Tip_1"/>
     <axis xyz="0.087537 0.996161 -0.000428"/>
     <limit effort="100" lower="0.0" upper="1.047198" velocity="100"/>
+    <mimic joint="Index_Flexor" multiplier="1" offset="0"/>
   </joint>
-  <joint name="Middle_DIP" type="revolute">
+  <joint name="R_Middle_DIP" type="revolute">
     <origin rpy="0 0 0" xyz="0.0 -0.0042 0.03"/>
     <parent link="Middle_Middle_1"/>
     <child link="Midle_Tip_1"/>
     <axis xyz="-0.0 1.0 0.0"/>
     <limit effort="100" lower="0.0" upper="1.047198" velocity="100"/>
+    <mimic joint="Middle_Flexor" multiplier="1" offset="0"/>
   </joint>
-  <joint name="Ring_DIP" type="revolute">
+  <joint name="R_Ring_DIP" type="revolute">
     <origin rpy="0 0 0" xyz="0.000259 -0.004184 0.030001"/>
     <parent link="Ring_Middle_1"/>
     <child link="Ring_Tip_1"/>
     <axis xyz="-0.08702 0.996207 -0.00031"/>
     <limit effort="100" lower="0.0" upper="1.047198" velocity="100"/>
+    <mimic joint="Ring_Flexor" multiplier="1" offset="0"/>
   </joint>
-  <joint name="Pinky_DIP" type="revolute">
+  <joint name="R_Pinky_DIP" type="revolute">
     <origin rpy="0 0 0" xyz="0.001397 -0.004132 0.029977"/>
     <parent link="Pinky_Middle_1"/>
     <child link="Pinky_Tip_1"/>
     <axis xyz="-0.178318 0.983965 0.003854"/>
     <limit effort="100" lower="0.0" upper="1.047198" velocity="100"/>
+    <mimic joint="Pinky_Flexor" multiplier="1" offset="0"/>
   </joint>
-  <joint name="Thumb_Yaw" type="revolute">
+  <joint name="R_Thumb_Yaw" type="revolute">
     <origin rpy="0 0 0" xyz="0.042207 0.017744 -0.001358"/>
     <parent link="base_link"/>
     <child link="Thumb_Prox_KC_1"/>
     <axis xyz="0.510615 0.562877 -0.649955"/>
     <limit effort="100" lower="-0.523599" upper="0.523599" velocity="100"/>
   </joint>
-  <joint name="Thumb_Roll" type="revolute">
+  <joint name="R_Thumb_Roll" type="revolute">
     <origin rpy="0 0 0" xyz="-0.007225 -0.005798 0.00515"/>
     <parent link="Thumb_Prox_KC_1"/>
     <child link="Thumb_Dist_KC_1"/>
     <axis xyz="0.786356 -0.0 0.617773"/>
     <limit effort="100" lower="-0.349066" upper="0.349066" velocity="100"/>
   </joint>
-  <joint name="Thumb_PIP" type="revolute">
+  <joint name="R_Thumb_Flexor" type="revolute">
     <origin rpy="0 0 0" xyz="0.046855 -0.010808 0.021295"/>
     <parent link="Thumb_Knuckle_1"/>
     <child link="Thumb_Middle_1"/>
     <axis xyz="0.34773 -0.826541 -0.442622"/>
     <limit effort="100" lower="0.0" upper="1.047198" velocity="100"/>
   </joint>
-  <joint name="Thumb_DIP" type="revolute">
+  <joint name="R_Thumb_DIP" type="revolute">
     <origin rpy="0 0 0" xyz="0.031506 -0.000124 0.024645"/>
     <parent link="Thumb_Middle_1"/>
     <child link="Thumb_Tip_1"/>
     <axis xyz="0.34773 -0.826541 -0.442622"/>
     <limit effort="100" lower="0.0" upper="1.047198" velocity="100"/>
+    <mimic joint="Thumb_Flexor" multiplier="1" offset="0"/>
   </joint>
-  <joint name="Index_Yaw" type="revolute">
+  <joint name="R_Index_Yaw" type="revolute">
     <origin rpy="0 0 0" xyz="0.01778 0.029123 0.084894"/>
     <parent link="base_link"/>
     <child link="Index_Knuckle_Cross_1"/>
     <axis xyz="0.996149 -0.087538 -0.004875"/>
     <limit effort="100" lower="-0.349066" upper="0.349066" velocity="100"/>
   </joint>
-  <joint name="Middle_Yaw" type="revolute">
+  <joint name="R_Middle_Yaw" type="revolute">
     <origin rpy="0 0 0" xyz="0.017 0.00725 0.090983"/>
     <parent link="base_link"/>
     <child link="Middle_Knuckle_Cross_1"/>
     <axis xyz="1.0 0.0 -0.0"/>
     <limit effort="100" lower="-0.349066" upper="0.349066" velocity="100"/>
   </joint>
-  <joint name="Ring_Yaw" type="revolute">
+  <joint name="R_Ring_Yaw" type="revolute">
     <origin rpy="0 0 0" xyz="0.018517 -0.015063 0.087139"/>
     <parent link="base_link"/>
     <child link="Ring_Knuckle_Cross_1"/>
     <axis xyz="0.9962 0.08702 0.003551"/>
     <limit effort="100" lower="-0.349066" upper="0.349066" velocity="100"/>
   </joint>
-  <joint name="Pinky_Yaw" type="revolute">
+  <joint name="R_Pinky_Yaw" type="revolute">
     <origin rpy="0 0 0" xyz="0.021743 -0.035807 0.078606"/>
     <parent link="base_link"/>
     <child link="Pinky_Knuckle_Cross_1"/>
     <axis xyz="0.983736 0.178359 -0.021263"/>
     <limit effort="100" lower="-0.349066" upper="0.349066" velocity="100"/>
   </joint>
-  <joint name="Thumb_Pitch" type="revolute">
+  <joint name="R_Thumb_Pitch" type="revolute">
     <origin rpy="0 0 0" xyz="0.005242 0.0081 0.011134"/>
     <parent link="Thumb_Dist_KC_1"/>
     <child link="Thumb_Knuckle_1"/>
