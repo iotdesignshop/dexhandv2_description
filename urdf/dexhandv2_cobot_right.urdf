@@ -964,7 +964,7 @@
     <parent link="Palm_1"/>
     <child link="Thumb_Prox_KC_1"/>
     <axis xyz="0.510615 0.562877 -0.649955"/>
-    <limit effort="100" lower="-0.523599" upper="0.523599" velocity="100"/>
+    <limit effort="100" lower="-0.523599" upper="0.0872665" velocity="100"/>
   </joint>
   <joint name="R_Thumb_Roll" type="revolute">
     <origin rpy="0 0 0" xyz="-0.007225 -0.005798 0.00515"/>
